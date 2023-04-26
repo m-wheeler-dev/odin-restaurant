@@ -1,0 +1,161 @@
+/* GOOGLE FONT IMPORT [POPPINS] */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+/* VARIABLES */
+:root {
+	--primary-color: #25beff;
+	--border: 2px solid var(--primary-color);
+}
+
+/* DEFAULTS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+	height: fit-content;
+	width: 100vw;
+	color: #fff;
+	background-color: #011e2e;
+	overflow-x: hidden;
+}
+
+h2 {
+	width: 100%;
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+	border-bottom: var(--border);
+}
+
+/* HEADER SECTION */
+header {
+	width: 100%;
+	text-align: center;
+}
+
+header h1 {
+	margin: 1rem 0;
+	font-weight: 300;
+}
+
+/* NAV SECTION */
+nav {
+	height: fit-content;
+	width: 100%;
+	padding-bottom: 0.5rem;
+	border-bottom: var(--border);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+nav button {
+	height: 2rem;
+	width: 20%;
+	font-size: 1.1rem;
+	font-weight: 200;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	transition: all 0.2s linear;
+}
+
+nav button:hover {
+	color: var(--primary-color);
+	transform: scale(1.1);
+}
+
+nav button.active {
+	font-weight: 300;
+	color: var(--primary-color);
+}
+
+/* MAIN SECTION (CHANGES WITH MODULES) */
+main,
+.home,
+.menu,
+.menu div,
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	height: fit-content;
+	width: 90%;
+	max-width: 1200px;
+	margin: 2rem auto;
+	background-color: #00000040;
+	border: var(--border);
+	border-radius: 15px;
+}
+
+/* HOME MODULE SECTION */
+.home p {
+	width: 90%;
+	margin: 2rem auto;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 200;
+}
+
+.home img {
+	min-height: 200px;
+	max-height: 400px;
+	width: 80%;
+	border-radius: 15px 15px 0 0;
+}
+
+/* MENU MODULE SECTION */
+.menu div {
+	height: fit-content;
+	width: 90%;
+	margin: 1rem auto;
+	overflow: hidden;
+}
+
+.dish-name {
+	padding: 0 1rem;
+	font-size: 1.25rem;
+	font-weight: 200;
+	border-bottom: var(--border);
+}
+
+.dish-img {
+	height: auto;
+	max-height: 20rem;
+	width: 80%;
+	margin: 0.75rem 0;
+	border-radius: 15px;
+	box-shadow: 0 0 1rem var(--primary-color);
+}
+
+.dish-price {
+	padding: 0 0.5rem;
+	font-weight: 200;
+	border-bottom: var(--border);
+}
+
+/* CONTACT MODULE SECTION */
+.contact p {
+	margin: 2rem auto;
+	padding: 0 1rem;
+	font-weight: 200;
+	border-bottom: var(--border);
+}
+
+/* FOOTER SECTION */
+footer {
+	height: fit-content;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	padding-bottom: 1rem;
+}
